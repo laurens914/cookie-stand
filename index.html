@@ -3,11 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Salmon Cookies</title>
+    <link rel="stylesheet" href="cookies.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h1> Salmon Cookies.<h1>
-      <img src= "codefellows/201d2/Cookies/salmon.png">
+    <h1> <img src= "salmon.png"></br>
+    Pat's Amazing Salmon Cookies.</h1>
+
+      <form id="shop-form">
+       <fieldset>
+         <legend>Cookie Information</legend>
+
+         <label for="location_name">Location Name</label>
+         <input id="location_name" name "location_name" type="text" placeholder="Location Name">
+
+         <label for="min_customers">Min Customers</label>
+         <input id="min_customers" name "min_cusomers" type="text" placeholder="Min Cusomters/hr">
+
+         <label for="max_customers">Max Customers</label>
+         <input id="max_customers" name "max_customers" type="text" placeholder="Max Customers/hr">
+
+         <label for="average_cookies">Averaege Cookies per Customer</label>
+         <input id="average_cookies" name "average_cookies" type="text" placeholder="Average Cookies">
+
+         <input id="user_submit" type="submit" value="Submit">
+       </fieldset>
+     </form>
       <section id='cookies'></section>
-  <script src='cookies2.js'></script>
+  <script src='cookies.js'></script>
   </body>
 </html>
