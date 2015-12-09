@@ -1,4 +1,4 @@
-var hours=['', '10am: ', '11am: ', '12pm: ', '1pm: ','2pm: ','3pm: ','4pm: ','5pm: '];
+var hours=['','Total ', '10am ', '11am ', '12pm ', '1pm ','2pm ','3pm ','4pm ','5pm ',];
 var shops = [];
 var hoursEl = document.getElementById('cookies');
 
@@ -18,7 +18,7 @@ CookieStand.prototype.customers = function (){
   };
 
 CookieStand.prototype.calc = function (){
-  for (i=0; i < hours.length-2; i++) {
+  for (var i=1; i < hours.length-1; i++) {
     var cook = Math.floor(this.customers() * this.average);
     this.hourlyTotals.push(cook);
     console.log(this.hourlyTotals[i]);
@@ -36,6 +36,7 @@ var alki = new CookieStand ('Alki', 3, 24, 2.6);
 
 function cookies () {
 var tblEl = document.createElement('table');
+tblEl.id='table';
   var trEl = document.createElement('tr');
   for (var i = 0;  i < hours.length; i++){
     var thEl = document.createElement('th');
@@ -62,7 +63,19 @@ for (var b=0; b < shops[h].hourlyTotals.length; b++){
 
 cookies();
 
+var userForm = document.getElementById('shop-form');
 
+userForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  var sName= event.target.location_name.value;
+  var min = event.target.min_customers.value;
+  var max = event.target.max_customers.value;
+  var aveg = event.target.average_cookies.value;
+  var newStore = new CookieStand (sName,min,max,aveg);
+  event.target.location_name.placeholder= 'Location Name';
+  hoursEl.textContent='';
+  cookies ();
+})
 
 // CookieStand.prototype.render = function () {
 //   for (var i=0; i < hours.length; i++){
