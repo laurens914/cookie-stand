@@ -38,7 +38,7 @@ function cookies () {
 var tblEl = document.createElement('table');
 tblEl.id='table';
   var trEl = document.createElement('tr');
-  for (var i = 0;  i < hours.length; i++){
+  for (var i = 0;  i < hours.length; i++){ 
     var thEl = document.createElement('th');
     thEl.textContent = hours[i];
     trEl.appendChild(thEl);
