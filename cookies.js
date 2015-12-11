@@ -14,7 +14,7 @@ function CookieStand(stand, min, max, average) {
 }
 
 CookieStand.prototype.customers = function (){
-    return Math.floor(Math.random() * (this.max - this.min) + this.min);
+    return Math.floor(Math.random() * (this.max - this.min) + parseInt(this.min));
   };
 
 CookieStand.prototype.calc = function (){
@@ -38,7 +38,7 @@ function cookies () {
 var tblEl = document.createElement('table');
 tblEl.id='table';
   var trEl = document.createElement('tr');
-  for (var i = 0;  i < hours.length; i++){ 
+  for (var i = 0;  i < hours.length; i++){
     var thEl = document.createElement('th');
     thEl.textContent = hours[i];
     trEl.appendChild(thEl);
@@ -68,11 +68,11 @@ var userForm = document.getElementById('shop-form');
 userForm.addEventListener('submit', function(event) {
   event.preventDefault();
   var sName= event.target.location_name.value;
-  var min = event.target.min_customers.value;
-  var max = event.target.max_customers.value;
-  var aveg = event.target.average_cookies.value;
+  var min = parseInt(event.target.min_customers.value);
+  var max = parseInt(event.target.max_customers.value);
+  var aveg = parseFloat(event.target.average_cookies.value);
   var newStore = new CookieStand (sName,min,max,aveg);
-  event.target.location_name.placeholder= 'Location Name';
+  // event.target.location_name.placeholder= 'Location Name';
   hoursEl.textContent='';
   cookies ();
 })
