@@ -1,17 +1,27 @@
 header {
-  background-color: #FF044B;
+  background-color: #E4CCDC;
   height:200px;
   width:auto;
   border:1px solid;
   padding-top:4.5%;
+  font-family: Lobster;
 }
 /*.salmon {
   height:100px;
   width:225px;
 }*/
-
+main {
+  font-family: Playfair Display;
+}
+nav li {
+  display: inline;
+}
+h2{
+  float:flex;
+  font-family: Lobster;
+}
 .family {
-  background-color:blue;
+  background-color:#98AEC9;
   margin:0 auto;
   height:500px;
   background-image:url(family.jpg);
@@ -24,11 +34,11 @@ header {
   height: 300px;
   width: 40%;
   float:right;
-  font-weight:bold;
+  font-weight:bolder;
   color:black;
 }
 .scookie {
-  background-color:red;
+  background-color:#66858A;
   height:500px;
   margin:-15px auto 0 auto;
   background-image:url(salmoncookies.jpg);
@@ -40,7 +50,7 @@ header {
 }
 .pscookie {
   color:black;
-  font-weight:bold;
+  font-weight:bolder;
   height:300px;
   width: 50%;
   margin:15px;
@@ -49,21 +59,27 @@ header {
   display:flex;
 }
 .shirt{
-  height: 100px;
-  width:75px;
+  height: 140px;
+  width:100px;
 }
 .merch{
   border:1px solid;
   width:33%;
   text-align:center;
+  background-color:#98AEC9;
 }
 .locations{
   border: 1px solid;
   width:33%;
   text-align:center;
+  background-color:#E4CCDC;
 }
 .events{
   border: 1px solid;
   width:33%;
+  text-align:center;
+  background-color: #ECF2FC;
+}
+footer{
   text-align:center;
 }
