@@ -2,34 +2,69 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Salmon Cookies</title>
-    <link rel="stylesheet" href="cookies.css">
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <title>Pat's Salmon Cookies</title>
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Playfair+Display' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    </style>
   </head>
   <body>
-    <h1> <img src= "salmon.png"></br>
-    Pat's Amazing Salmon Cookies.</h1>
-
-      <form id="shop-form">
-       <fieldset>
-         <legend>Cookie Information</legend>
-
-         <label for="location_name">Location Name</label>
-         <input id="location_name" name "location_name" type="text" placeholder="Location Name">
-
-         <label for="min_customers">Min Customers</label>
-         <input id="min_customers" name "min_cusomers" type="text" placeholder="Min Cusomters/hr">
-
-         <label for="max_customers">Max Customers</label>
-         <input id="max_customers" name "max_customers" type="text" placeholder="Max Customers/hr">
-
-         <label for="average_cookies">Averaege Cookies per Customer</label>
-         <input id="average_cookies" name "average_cookies" type="text" placeholder="Average Cookies">
-
-         <input id="user_submit" type="submit" value="Submit">
-       </fieldset>
-     </form>
-      <section id='cookies'></section>
-  <script src='cookies.js'></script>
+    <header><a name='top'></a>
+    <div class='container'>
+      <div class='row'>
+      <section>
+          <img class='salmon three columns' src="images/salmon.png" alt="salmon" />
+      </section>
+        <h1 class='eight columns'> Pat's Salmon Cookie Shop</h1>
+          <p class='slogan offset-by-six columns'>"Salmon Cookies made with fish, Salmon Cookies are delish!"</p>
+      </div> <!-- row closer -->
+      </div> <!-- closer for container -->
+      <nav>
+        <ul>
+          <li><a href='#abouUs'>About us</a></li>
+          <li><a href='#locations'>Hours and Locations</a></li>
+          <li><a href='#events'>More About Salmon Events</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <a name='aboutUs'></a>
+      <section class='family'>
+        <h2> Our History </h2>
+      </br>
+        <p class='pfamily five columns '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </section>
+      <section class='scookie'>
+        <p class='pscookie'>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+      </section>
+      <section class='bottom'>
+        <section class='merch'>
+          <h2>Merchandise</h2>
+          <img class='shirt' src="images/salmonshirt.jpg" alt="salmonShirt">
+        </section>
+        <section class='locations'><a name='locations'></a>
+          <ul><h2>Locations</h2>
+            <li>Pike Place Market</li>
+            <li>SeaTac</li>
+            <li>Southcenter Mall</li>
+            <li>Bellevue Square</li>
+            <li>Alki</li>
+          </ul>
+          <p>All Locations Open Daily 10am - 5pm!</p>
+        </section>
+        <section class='events'><a name='events'></a>
+          <ul> <h2>Other Salmon Events</h2>
+            <li> <a href='http://www.salmondays.org'>Salmon Days</a></li>
+            <li> <a href='http://salmonfestseattle.com'>Salmonfest</a></li>
+            <li><a href='http://salmonhomecoming.org'>Welcome Home Salmon</a></li>
+          </ul>
+        </section>
+    </section>
+    </main>
+    <footer>
+      <a href='#top'>Back to Top</a>
+      <p>&copy; Pat's Salmon Cookies 2011</p>
+    </footer>
   </body>
 </html>
